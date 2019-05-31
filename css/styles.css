@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Blacklisted;
+  src: url("../fonts/Blacklisted.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .nav-link{
+    color: #000 !important;
+}
+
+#landing-info-bar {
+    background-color: #1B3D74;
+    box-shadow: -1px 2px 20px 3px rgba(0, 0, 0, 0.3) inset;
+    padding: 2.5rem;
+    color: #fff;
+}
+
+#landing-info-bar h1 {
+    text-transform: uppercase;
+}
+
+#landing-info-bar h1 span {
+    font-size: 2.5rem;
+}
+
+#landing-info-bar p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#landing-info-bar p span {
+    font-size: 1.2rem;
+}
+
+#landing-info-bar a {
+    padding: .7rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    color: #fff;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+#landing-info-bar a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #1B3D74;
+}
+
+#video-section {
+    text-align: center;
+}
+
+#video-section video {
+    margin: 3rem auto;
+    width: 80%;
+    height: auto;
+}
+
+#about {
+    background-color: #1B3D74;
+    color: #fff;
+    padding: 4rem;
+}
+
+footer {
+    padding: 2rem;
+}
