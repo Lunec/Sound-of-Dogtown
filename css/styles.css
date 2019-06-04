@@ -346,3 +346,12 @@ footer li a:hover {
         display: inline-block;
     }
 }
+
+/* helpers */
+
+.cta-primary {
+  padding: 1rem 2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.6rem;
+}
