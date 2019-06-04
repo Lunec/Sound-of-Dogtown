@@ -22,6 +22,12 @@ body {
     font-family: "Montserrat";
 }
 
+p {
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  margin: 3rem 0;
+}
+
 /* Logo */
 
 #logo {
@@ -116,12 +122,6 @@ body {
     font-size: 6rem;
 }
 
-#landing p {
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    font-family: "Redhat";
-}
-
 #landing span {
     font-size: 3rem;
 }
@@ -134,14 +134,11 @@ body {
     margin: 8rem auto;
 }
 
-#about h2 {
-    font-family: "Redhat";
-    font-size: 3rem;
-}
+/* Video section */
 
-#about p {
-    margin-top: 3rem;
-    font-size: 1.6rem;
+#video-section .section-title {
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
 /* Ride & Danse */
@@ -199,18 +196,9 @@ body {
 }
 
 #presentation .presentation-text {
-    padding: 5rem 5rem 10rem 5rem;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4) inset;
-}
-
-#presentation .presentation-text h2 {
-    font-family: "Redhat";
-    font-size: 3rem;
-}
-
-#presentation .presentation-text p {
-    margin-top: 3rem;
-    font-size: 1.6rem;
+    padding: 0 5rem;
+    border-radius: 1px;
+    margin-bottom: 3rem;
 }
 
 #presentation .presentation-img {
@@ -220,15 +208,14 @@ body {
 /* Services */
 
 #services {
-    padding: 10rem 0;
-    width: 60%;
+  padding: 12rem 0;
 }
 
+
 #services h2 {
-    font-family: "Redhat";
-    font-size: 2.6rem;
-    text-align: center;
-    margin-bottom: 3rem;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
 .service i, .service span {
@@ -350,8 +337,42 @@ footer li a:hover {
 /* helpers */
 
 .cta-primary {
+  display: inline-block;
+  position: relative;
   padding: 1rem 2rem;
-  color: #fff;
-  border: 1px solid #fff;
+
+  font-family: "Redhat";
   font-size: 1.6rem;
+
+  transition: all .2s;
+}
+
+.cta-primary:hover {
+  cursor: pointer;
+  background-color: #FB5607;
+  border: 1px solid #FB5607;
+}
+
+.cta-primary-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.cta-primary-orange {
+  border: 1px solid #FB5607;
+  color: #FB5607;
+}
+
+.cta-primary-black {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.cta-primary-black:hover {
+  color: #fff !important; /* Temporary patch. */
+}
+
+.section-title {
+  font-family: "Redhat";
+  font-size: 3rem;
 }
