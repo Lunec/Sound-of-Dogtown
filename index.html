@@ -5,63 +5,191 @@
         <title>Sound of Dogtown Festival</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     </head>
 
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Billetterie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <nav class="navbar-container">
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+
+        <ul id="main-navbar" role="navigation">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Billetterie</a></li>
+          <li><a href="#">Programme</a></li>
+          <li><a href="#">Le Festival</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
 
-      <div id="landing-info-bar">
-        <h1>Sound of <span>Dogtown</span></h1>
-        <p>
-          <span>LIEU, LE LIEU /// DU XX AU XX XXXX</span><br/>
-          DESCRIPTION COURTE DESCRIPTION COURTE
-        </p>
-        <a href="#">Infos pratiques &#8594;</a>
+      <header id="landing">
+          <h1>Sound of Dogtown</h1>
+          <p>7.8.9 Août 2020 &mdash; Gravelines</p>
+          <!-- <span>&#8595;</span> -->
+      </header>
+
+      <div id="about">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur mollitia, earum quaerat quae voluptatem molestias impedit accusantium eum debitis omnis magnam perspiciatis magni, tempore corporis, enim illo nulla? Deserunt, aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div id="video-section">
-        <video controls autoplay>
-          <source src="videos/placeholder.mp4" type="video/mp4">
-        </video>
+
+      <div id="ride-danse-section" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 main-cta" id="to-skaters-cta">
+            <span>Ride</span>
+            <a href="#">Voir les ateliers &#8594;</a>
+          </div>
+
+          <div class="col-sm-6 main-cta" id="to-lineup-cta">
+            <span>Danse</span>
+            <a href="#">Voir la line-up &#8594;</a>
+          </div>
+        </div>
       </div>
 
       <div id="about">
-        <h2>Le festival</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <h2>Le festival</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur mollitia, earum quaerat quae voluptatem molestias impedit accusantium eum debitis omnis magnam perspiciatis magni, tempore corporis, enim illo nulla? Deserunt, aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis accusantium inventore quaerat tempora atque, qui, a nisi accusamus perferendis repellendus vel quod earum praesentium aperiam officia suscipit quo eos. lorem</p>
       </div>
 
-      <footer>
-          content content content content content
-      </footer>
+      <div id="presentation" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 presentation-text">
+            <h2>Achète un nouveau skate...</h2>
+            <p>Découvrez sur nos stands des planches en édition limitée de vos marques préférées. SkateDeluxe, Palace, Santa Cruz, Sk8mafia, Antiz et bien d’autres encore seront disponible à la vente pendant toute la durée du festival. Trucks, roues, T-tools et protections seront également en vente sur les stands. Profitez de prix bas et de conseils de professionnels, présents sur tous les stands. </p>
+          </div>
+          <div class="col-sm-6" id="atelier-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6" id="atelier-2"></div>
+          <div class="col-sm-6 presentation-text">
+            <h2>... sinon, custom le tien...</h2>
+            <p>Au programme du stand : dessin sur grip, vente d’autocollant, peinture sur planche, changement de trucks et de roues. Profitez d’un matériel de qualité et de l’intervention de dessinateurs confirmés pour donner une nouvelle vie à votre planche. Un large choix d’autocollant, de crayons, de peinture et de roues est mis à votre disposition pour exprimer votre créativité.
+              </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 presentation-text">
+            <h2>... ou tes vêtements</h2>
+            <p>Retrouvez toutes les plus grandes marques de vêtements de skaters. Chaussures, t-shirt, chaussettes, couvre-chef et bien plus encore vous attendent sur les stands du festival. Découvrez en avant-première les dernières collections de nos sponsors, et profitez de réductions sur de nombreux articles. </p>
+          </div>
+          <div class="col-sm-6" id="atelier-3"></div>
+        </div>
+      </div>
+
+      <div id="services" class="container">
+        <h2>Services</h2>
+        <div class="row">
+
+          <div class="col-sm-4 service">
+            <i class="fa fa-angle-double-down"></i>
+            <span>Buvette</span>
+          </div>
+
+          <div class="col-sm-4 service">
+            <i class="fa fa-angle-double-down"></i>
+            <span>Secours</span>
+          </div>
+
+          <div class="col-sm-4 service">
+            <i class="fa fa-angle-double-down"></i>
+            <span>Casiers</span>
+          </div>
+
+          <div class="col-sm-4 service">
+            <i class="fa fa-angle-double-down"></i>
+            <span>Chargeurs</span>
+          </div>
+
+          <div class="col-sm-4 service">
+            <i class="fa fa-angle-double-down"></i>
+            <span>Jetons</span>
+          </div>
+
+          <div class="col-sm-4 service">
+            <i class="fas fa-angle-double-down"></i>
+            <span>Camping</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="skaters" class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/RM.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Rodney Mullen</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/TH.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Tony Hawk</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/RM.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Rodney Mullen</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/TH.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Rodney Mullen</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/RM.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Rodney Mullen</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="skater-container" id="rodney-mullen">
+              <img src="images/skaters/TH.jpg" alt="photo of Rodney Mullen" class="skater-img">
+              
+              <div class="skater-overlay">
+                <span>Rodney Mullen</span>
+                <a href="#">Voir sa page</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
 
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
     </body>
 </html>
