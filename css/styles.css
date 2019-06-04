@@ -22,6 +22,13 @@ body {
     font-family: "Montserrat";
 }
 
+/* Logo */
+
+#logo {
+  width: 20px;
+  height: 20px;
+}
+
 /* Navbar styles */
 
 .navbar-container { /* Positionning navbar and setting bg-color  */
@@ -47,10 +54,12 @@ body {
     font-size: 1.6rem;
     color: #000;
     text-decoration: none;
+    transition: all .2s;
 }
 
 .navbar-container a:hover {
-    background-color: #CC4403;
+    background-color: #FB5607;
+    color: #fff;
 }
 
 /* Hamburger menu styles */
@@ -100,6 +109,7 @@ body {
     color: #fff;
     font-family: "Blacklisted";
     text-align: center;
+    position: relative;
 }
 
 #landing h1 {
@@ -109,7 +119,7 @@ body {
 #landing p {
     margin-top: 1rem;
     font-size: 2.5rem;
-    font-family: "Redhat";  
+    font-family: "Redhat";
 }
 
 #landing span {
@@ -157,7 +167,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1.6rem;
-    
+
     transition: all .2s;
 }
 
@@ -184,6 +194,10 @@ body {
 
 /* Presentation section */
 
+#presentation {
+  padding: 0;
+}
+
 #presentation .presentation-text {
     padding: 5rem 5rem 10rem 5rem;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4) inset;
@@ -201,18 +215,6 @@ body {
 
 #presentation .presentation-img {
     background: url('https://via.placeholder.com/1280x720.png') no-repeat center;
-}
-
-#atelier-1 {
-    background: url('../images/ateliers-1.jpg') no-repeat center;    
-}
-
-#atelier-2 {
-    background: url('../images/ateliers-2.jpg') no-repeat center;    
-}
-
-#atelier-3 {
-    background: url('../images/ateliers-3.jpg') no-repeat center;    
 }
 
 /* Services */
@@ -255,7 +257,7 @@ body {
 }
 
 .skater-container {
-    
+
 }
 
 .skater-img {
@@ -279,7 +281,8 @@ body {
 }
 
 .skater-overlay span {
-    font-size: 2.6rem;
+    font-size: 4rem;
+    font-family: "Blacklisted";
     color: #fff;
     display: block;
     margin-top: 40%;
@@ -287,10 +290,10 @@ body {
 
 .skater-overlay a {
     display: inline-block;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     margin-top: 2rem;
     padding: 1rem 2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #fff;
     text-decoration: none;
     transition: all .4s;
@@ -299,6 +302,33 @@ body {
 .skater-overlay a:hover {
     color: #000;
     background-color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 4rem;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer li a {
+  color: #000;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-left: 2rem;
+  border-left: 1px solid #333;
+  padding-left: 2rem;
+}
+
+#footer-first-link {
+  border-left: none;
+}
+
+footer li a:hover {
+  text-decoration: none;
+  color: #FB5607;
 }
 
 /* Media queries */
@@ -312,7 +342,7 @@ body {
         display: block;
     }
 
-    .navbar-container .menu-icon { 
+    .navbar-container .menu-icon {
         display: inline-block;
     }
 }
