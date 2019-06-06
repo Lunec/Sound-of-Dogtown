@@ -22,6 +22,11 @@ body {
     font-family: "Montserrat";
 }
 
+h1 {
+    font-family: "Blacklisted";
+    font-size: 6rem;
+}
+
 p {
   font-size: 1.6rem;
   font-family: "Montserrat";
@@ -49,6 +54,9 @@ p {
   text-decoration: none;
 }
 
+.video-overlay .cta-primary {
+  box-shadow: none;
+}
 
 .skater-overlay .cta-primary-skater {
   margin-top: 2rem;
@@ -56,7 +64,7 @@ p {
   color: #fff;
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0);
-  transition: all .3s ease-in;  
+  transition: all .3s ease-in;
 }
 
 .cta-primary-skater:hover {
@@ -96,18 +104,19 @@ p {
 /* Logo */
 
 #logo {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
 }
 
 /* Navbar styles */
 
 .navbar-container { /* Positionning navbar and setting bg-color  */
     width: 100%;
-    background-color: #fff;
+    background-color: #fffeee;
     position: fixed;
     z-index: 99;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0px 1px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-container ul {
@@ -129,8 +138,7 @@ p {
 }
 
 .navbar-container a:hover {
-    background-color: #FB5607;
-    color: #fff;
+    color: #FB5607;
 }
 
 /* Hamburger menu styles */
@@ -173,16 +181,10 @@ p {
 
 /* Landing area */
 
-#landing { /* Video overlay */
+#landing {
     color: #fff;
-    font-family: "Blacklisted";
     text-align: center;
     position: relative;
-}
-
-#landing h1 {
-    margin-top: -6.4rem;
-    font-size: 6rem;
 }
 
 #landing p {
@@ -190,10 +192,6 @@ p {
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Redhat";
-}
-
-#landing span {
-    font-size: 3rem;
 }
 
 /* About section */
@@ -204,15 +202,67 @@ p {
     margin: 8rem auto;
 }
 
+/* Presentation section */
+
+#presentation {
+  padding: 0;
+}
+
+#presentation .presentation-text {
+    padding: 5rem;
+    border-radius: 1px;
+    background-color: #eee;
+    color: #000;
+    background: #f5f5dc;
+}
+
+#presentation .presentation-img {
+    background: url('https://via.placeholder.com/1280x720.png') no-repeat center;
+}
+
+/* Services */
+
+#services {
+  width: 50%;
+  margin: 10rem auto;
+}
+
+#services h2 {
+  margin: 3rem 0 6rem 0;
+  text-align: center;
+  text-transform: none;
+}
+
+.service {
+  padding: 3rem 0;
+  text-align: center;
+  transition: box-shadow .2s;
+  padding: 4rem 3rem;
+}
+
+.service:hover {
+  color: #FB5607;
+}
+
+.service i, .service span {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.service .icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.service span {
+    margin-top: 3.2rem;
+}
+
 /* Professional skaters section */
 
 #skaters {
     margin: 0;
     padding: 0;
-}
-
-.skater-container {
-
 }
 
 .skater-img {
@@ -243,25 +293,9 @@ p {
     margin-top: 40%;
 }
 
-.skater-inside-overlay-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.skater-inside-overlay {
-  position: absolute;
-  top: 100%; bottom: 0; left: 0; right: 0;
-  transition: all .2s;
-}
-
-.skater-container:hover .skater-inside-overlay {
-  top: 0;
-}
-
 footer ul {
   list-style-type: none;
-  margin: 4rem;
+  margin: 4rem 0;
 }
 
 footer ul li {
@@ -305,12 +339,7 @@ footer li a:hover {
     }
 }
 
-/* Video section */
-
-#video-section .section-title {
-  text-align: center;
-  margin-bottom: 6rem;
-}
+/*** UNUSED ***/
 
 /* Ride & Danse */
 
@@ -360,55 +389,9 @@ footer li a:hover {
     color: #1B3D74;
 }
 
-/* Presentation section */
+/* Video section */
 
-#presentation {
-  padding: 0;
-}
-
-#presentation .presentation-text {
-    padding: 5rem;
-    border-radius: 1px;
-    margin-bottom: 3rem;
-}
-
-#presentation .presentation-img {
-    background: url('https://via.placeholder.com/1280x720.png') no-repeat center;
-}
-
-/* Services */
-
-#services {
-  width: 50%;
-  margin: 10rem auto;
-}
-
-#services h2 {
-  margin: 3rem 0 6rem 0;
+#video-section .section-title {
   text-align: center;
-  text-transform: none;
-}
-
-.service {
-  padding: 3rem 0;
-  text-align: center;
-  transition: box-shadow .2s;
-  padding: 4rem 3rem;
-}
-
-.service:hover {
-  color: #FB5607;
-}
-
-.service i, .service span {
-    display: block;
-    font-size: 1.6rem;
-}
-
-.service i {
-    font-size: 2rem;
-}
-
-.service span {
-    margin-top: 3.2rem;
+  margin-bottom: 6rem;
 }
