@@ -422,10 +422,12 @@ footer {
 
 footer ul {
   list-style-type: none;
+  margin: 0;
 }
 
 footer ul li {
-  display: block;
+  margin-left: 3rem;
+  display: inline-block;
 }
 
 footer li a {
@@ -561,5 +563,3 @@ footer li a:hover {
     padding: 3rem;
   }
 }
-
-/*** UNUSED ***/
