@@ -156,7 +156,7 @@ p {
     position: relative;
 }
 
-#landing p {
+.video-overlay p {
   margin: 1rem 0 2rem 0;
   font-size: 2rem;
   text-transform: uppercase;
@@ -288,6 +288,7 @@ p {
 .carousel-caption {
   font-family: "Redhat";
   margin-bottom: 20rem;
+  bottom: 0;
 }
 
 .carousel-caption h3 {
@@ -413,16 +414,13 @@ footer ul {
 }
 
 footer ul li {
-  display: inline-block;
+  display: block;
 }
 
 footer li a {
   color: #000;
   font-size: 1.6rem;
   text-decoration: none;
-  margin-left: 2rem;
-  border-left: 1px solid #333;
-  padding-left: 2rem;
 }
 
 #footer-first-link {
@@ -439,7 +437,6 @@ footer li a:hover {
 /* Media queries */
 
 @media screen and (max-width: 576px) {
-
     .main-navbar li a {
         display: none;
     }
@@ -463,6 +460,52 @@ footer li a:hover {
     footer li a {
       border: none;
     }
+    .video-overlay h1 {
+      font-size: 2rem;
+    }
+    .video-overlay p {
+      font-size: 1.6rem;
+    }
+    .video-overlay a {
+      margin-top: .5rem;
+      font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .video-overlay h1 {
+    margin-top: 6rem;
+  }
+  .video-overlay p {
+    margin: .5rem;
+  }
+  #about {
+    width: 80%;
+  }
+  #line-up {
+    display: none;
+  }
+  .video-section {
+    padding: 6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel { width: 100%; }
+  .video-section {
+    padding: 6rem 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-informations .section-title {
+    margin: 6rem 0;
+    text-align: center;
+  }
+  #presentation .presentation-text {
+    padding: 3rem;
+  }
 }
 
 /*** UNUSED ***/
