@@ -4,13 +4,19 @@
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Robot-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
     font-family: Redhat;
-    src: url("../fonts/RedHatText-Regular.otf");
+    src: url("../fonts/Redhat/RedHatText-Regular.otf");
 }
 
 html {
@@ -19,7 +25,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat";
+    font-family: "Roboto";
 }
 
 h1 {
@@ -29,7 +35,6 @@ h1 {
 
 p {
   font-size: 1.6rem;
-  font-family: "Montserrat";
   margin: 3rem 0;
 }
 
@@ -78,6 +83,7 @@ p {
   font-family: "Redhat";
   font-size: 3rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .bg-video {
@@ -116,7 +122,7 @@ p {
     background-color: #FEF4EF;
     position: fixed;
     z-index: 99;
-    box-shadow: 0px 1px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .main-navbar {
@@ -182,6 +188,10 @@ p {
     border-radius: 1px;
     background-color: #FEF4EF;
     color: #000;
+}
+
+.presentation-text .section-title {
+  font-weight: bold;
 }
 
 #presentation .presentation-img {
@@ -350,11 +360,12 @@ p {
 /* Contact informations section */
 
 .contact-informations {
-  padding: 6rem 0;
+  padding: 0 0 6rem 0;
 }
 
 .contact-informations .section-title {
-  margin-bottom: 3rem;
+  margin: 0 0 6rem 0;
+  text-align: center;
 }
 
 .contact-informations ul {
@@ -434,6 +445,45 @@ footer li a:hover {
   color: #FB5607;
 }
 
+.faq {
+  padding: 12.4rem 6rem 6rem 6rem;
+}
+
+.faq .section-title {
+  margin-bottom: 3rem;
+}
+
+.faq-group h2 {
+  font-weight: bold;
+}
+
+.presse {
+  padding: 12.4rem 6rem 6rem 6rem;
+}
+
+.presse .section-title {
+  margin-bottom: 3rem;
+}
+
+.presse ul {
+  list-style-type: square;
+}
+
+.presse li {
+  font-size: 1.6rem;
+  transition: all .2s;
+}
+
+.presse a {
+  text-decoration: none;
+  color: #000;
+  transition: inherit;
+}
+
+.presse a:hover, .presse li:hover {
+  color: #FB5607;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 576px) {
@@ -495,6 +545,10 @@ footer li a:hover {
   .video-section {
     padding: 6rem 0;
     margin: 0 auto;
+  }
+  .mapouter {
+    margin-bottom: 6rem;
+    text-align: center;
   }
 }
 
