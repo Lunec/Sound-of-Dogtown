@@ -1,7 +1,8 @@
-function setMenuToColumn(x) {
-    document.getElementById('n').classList.toggle("navbar-column");
-}
-
-function setMenuToRow(x) {
-    x.classList.toggle("navbar-row");
+function myFunction() {
+  var x = document.getElementById("main-navbar");
+  if (x.className === "main-navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "main-navbar";
+  }
 }

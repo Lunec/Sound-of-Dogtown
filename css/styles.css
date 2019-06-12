@@ -119,12 +119,12 @@ p {
     box-shadow: 0px 1px 4px 0 rgba(0,0,0,.2);
 }
 
-.navbar-container ul {
+.main-navbar {
     display: flex;
-
     padding: 0;
     margin: 0;
     list-style-type: none;
+    overflow: hidden;
 }
 
 .navbar-container a {
@@ -144,39 +144,8 @@ p {
 /* Hamburger menu styles */
 
 .navbar-container .menu-icon { /* Positionning to the right */
-    cursor: pointer;
     float: right;
-    padding: 2.8rem 2rem;
     display: none;
-}
-
-.navbar-container .menu-icon .navicon { /* Drawing middle bar of icon */
-    background: #000;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-}
-
-.navbar-container .menu-icon .navicon:before, /* Drawing first & last bars */
-.navbar-container .menu-icon .navicon:after {
-  background: #000;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-
-  transition: all .2s ease-out;
-}
-
-.navbar-container .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.navbar-container .navicon:after {
-  top: -5px;
 }
 
 /* Landing area */
@@ -470,68 +439,30 @@ footer li a:hover {
 /* Media queries */
 
 @media screen and (max-width: 576px) {
-    .navbar-container ul li {
+
+    .main-navbar li a {
         display: none;
     }
 
-    .navbar-container ul li:first-child { /* On affiche le logo sur petits écrans mais pas les autres liens */
+    .main-navbar.responsive {
+      display: block;
+    }
+
+    .main-navbar.responsive li a{
+      display: block;
+    }
+
+    .main-navbar #logo { /* On affiche le logo sur petits écrans mais pas les autres liens */
         display: block;
     }
 
     .navbar-container .menu-icon {
-        display: inline-block;
+        display: block;
     }
+
     footer li a {
       border: none;
     }
 }
 
 /*** UNUSED ***/
-
-/* Ride & Danse */
-
-#ride-danse-section .main-cta {
-    text-align: center;
-    padding: 12rem 0;
-}
-
-#ride-danse-section .main-cta span { /* Title */
-    display: block;
-    font-size: 4rem;
-    color: #fff;
-    font-family: "Blacklisted";
-}
-
-#ride-danse-section .main-cta a { /* The actual cta */
-    display: inline-block;
-    margin: 1rem auto;
-    padding: 1.5rem 2rem;
-    border: 1px solid #fff;
-
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.6rem;
-
-    transition: all .2s;
-}
-
-#ride-danse-section .main-cta a:hover {
-    background-color: #fff;
-    font-weight: bold;
-}
-
-#ride-danse-section #to-skaters-cta {
-    background-color: #FB5607;
-}
-
-#ride-danse-section #to-skaters-cta a:hover {
-    color: #FB5607;
-}
-
-#ride-danse-section #to-lineup-cta {
-    background-color: #1B3D74;
-}
-
-#ride-danse-section #to-lineup-cta a:hover {
-    color: #1B3D74;
-}
